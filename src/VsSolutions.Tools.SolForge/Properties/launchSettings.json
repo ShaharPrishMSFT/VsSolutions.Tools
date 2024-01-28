@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VsSolutions.Tools.SolForgeSolForge": {
+      "commandName": "Project",
+      "commandLineArgs": "centralmgmt -d C:\\src\\cesec\\TVM.Immune.Telemetry.Enricher --apply\r\n"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/.vs/VsSolutions.Tools
+/src/VsSolutions.Tools.SolForge/bin
+/src/VsSolutions.Tools.SolForge/obj
