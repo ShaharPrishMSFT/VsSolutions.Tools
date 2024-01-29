@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFrameworks>net8.0;net7.0;net6.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackAsTool>true</PackAsTool>
@@ -18,6 +19,19 @@
 		<WarningsNotAsErrors>618,672</WarningsNotAsErrors>
 		<NoWarn>1701,1702,AD0001,CA5394,NU5100,NU5104</NoWarn>
 		<WarningLevel>7</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package Info">
+		<Product>VsSolutions.Tools</Product>
+		<Title>VsSolutions.Tools</Title>
+		<Authors>Shahar Prish</Authors>
+		<Owners>Shahar Prish</Owners>
+		<Copyright>@ Shahar Prish. All rights reserved.</Copyright>
+		<Description>Visual Studio Solution Tools</Description>
+		<Summary>Visual Studio Solution Tools</Summary>
+		<RepositoryBranch>main</RepositoryBranch>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/ShaharPrishMSFT/VsSolutions.Tools</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
