@@ -2,7 +2,7 @@
   "profiles": {
     "VsSolutions.Tools.SolForgeSolForge": {
       "commandName": "Project",
-      "commandLineArgs": "centralmgmt -d C:\\src\\cesec\\TVM.Immune.Telemetry.Enricher --apply\r\n"
+      "commandLineArgs": "centralmgmt -d C:\\your\\dir\\here --apply"
     }
   }
 }

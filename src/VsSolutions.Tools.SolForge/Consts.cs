@@ -19,5 +19,5 @@ internal class Consts
 </Project>
 """;
 
-    public const string ContributeToProject = "This project was modified by VsSolutions.Tools.SolForgeSolForge (https://dev.azure.com/microsoft/WDATP/_git/TVM.Immune.Tools)";
+    public const string ContributeToProject = "This project was modified by VsSolutions.Tools.SolForge (https://github.com/ShaharPrishMSFT/VsSolutions.Tools/)";
 }

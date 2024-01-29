@@ -7,7 +7,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackAsTool>true</PackAsTool>
-		<PackageId>Immune.Tools.SolForge</PackageId>
+		<PackageId>VsSolutions.Tools.SolForge</PackageId>
 		<ToolCommandName>solforge</ToolCommandName>
 		<Version>1.0.0</Version>
 		<PackageVersion>1.0.0</PackageVersion>
