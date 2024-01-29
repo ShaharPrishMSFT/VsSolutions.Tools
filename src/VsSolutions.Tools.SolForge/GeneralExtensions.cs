@@ -81,7 +81,7 @@ public static class GeneralExtensions
 
     public static string? GetAttribute(this XmlNode node, string name)
     {
-        var result = node.Attributes!["Include"];
+        var result = node.Attributes![name];
         if (result != null)
         {
             return result.Value;
