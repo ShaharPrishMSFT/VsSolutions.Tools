@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>TestLib._31c7b13132a74e27bc0d1c5b70636c51</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <PackageId>TestLib.31c7b13132a74e27bc0d1c5b70636c51</PackageId>
+	  <Version>0.0.1</Version>
+	  <PackageVersion>0.0.1</PackageVersion>
+  </PropertyGroup>
+
+</Project>
