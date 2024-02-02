@@ -2,7 +2,7 @@
   "profiles": {
     "VsSolutions.Tools.SolForgeSolForge": {
       "commandName": "Project",
-      "commandLineArgs": "centralmgmt -d C:\\your\\dir\\here --apply"
+      "commandLineArgs": "centralmgmt -d C:\\src\\cesec\\TVM.Immune.RuleWriter --apply"
     }
   }
 }
