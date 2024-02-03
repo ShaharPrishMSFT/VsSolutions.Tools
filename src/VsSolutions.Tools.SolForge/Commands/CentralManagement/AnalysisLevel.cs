@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
-namespace VsSolutions.Tools.SolForgeSolForge.Analyzers.NuGetPackages;
+namespace VsSolutions.Tools.SolForgeSolForge.Commands.CentralManagement;
 
 internal enum AnalysisLevel
 {

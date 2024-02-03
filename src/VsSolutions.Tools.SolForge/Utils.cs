@@ -5,10 +5,14 @@
 namespace VsSolutions.Tools.SolForgeSolForge;
 using System;
 using System.Collections.Generic;
+using System.CommandLine;
+using System.Diagnostics.CodeAnalysis;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
+using VsSolutions.Tools.SolForge.ProjectSystem;
 
-public static class GeneralExtensions
+public static class Utils
 {
     public static string GetFormattedXml(this XmlDocument doc)
     {
@@ -130,4 +134,36 @@ public static class GeneralExtensions
 
         return (-1, -1);
     }
+
+    public static void AddCommands(this Command command, params Command[] subCommands)
+        => command.AddCommands((IEnumerable<Command>)subCommands);
+
+    public static void AddCommands(this Command command, IEnumerable<Command> subCommands)
+    {
+        foreach (var subCommand in subCommands)
+        {
+            command.AddCommand(subCommand);
+        }
+    }
+
+    public static DirectoryInfo GetRootSolForgeConfig(string currentDirectory)
+    {
+        var root = RelativeFileLocation.ClosestSolutionRoot.GetDirectory(currentDirectory.AsDirectoryInfo());
+        if (root == null)
+        {
+            Logger.LogError($"Could not find a solution root above {currentDirectory}");
+            throw new InvalidOperationException();
+        }
+
+        return root.CombineDirectory(Consts.SolForgeDir);
+    }
+
+    public static DirectoryInfo CombineDirectory(this DirectoryInfo di, params string[] names)
+        => new DirectoryInfo(Path.Combine(names.Prepend(di.FullName).ToArray()));
+
+    public static FileInfo CombineFile(this DirectoryInfo di, params string[] names)
+        => new FileInfo(Path.Combine(names.Prepend(di.FullName).ToArray()));
+
+    [return: NotNullIfNotNull(nameof(dir))]
+    public static DirectoryInfo? AsDirectoryInfo(this string? dir) => dir is string st ? new DirectoryInfo(st) : null;
 }

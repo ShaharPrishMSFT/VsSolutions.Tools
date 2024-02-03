@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
-namespace VsSolutions.Tools.SolForgeSolForge.Analyzers.NuGetPackages;
+namespace VsSolutions.Tools.SolForgeSolForge.Commands.CentralManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Xml;
 using VsSolutions.Tools.SolForgeSolForge.ProjectSystem;
 
-internal partial class NuGetManagementAnalyzer(string? directory, bool applyChanges)
+internal partial class NuGetManagementCommandHandler(string? directory, bool applyChanges)
 {
     private string _directory = directory ?? Directory.GetCurrentDirectory();
     private bool _applyChanges = applyChanges;

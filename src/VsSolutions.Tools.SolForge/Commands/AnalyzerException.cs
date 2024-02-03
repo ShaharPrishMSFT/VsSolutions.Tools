@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
-namespace VsSolutions.Tools.SolForgeSolForge.Analyzers;
+namespace VsSolutions.Tools.SolForgeSolForge.Commands;
 using System;
-using VsSolutions.Tools.SolForgeSolForge.Analyzers.NuGetPackages;
+using VsSolutions.Tools.SolForgeSolForge.Commands.CentralManagement;
 
 internal class AnalyzerException : Exception
 {

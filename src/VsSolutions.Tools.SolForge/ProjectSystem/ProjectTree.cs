@@ -21,8 +21,10 @@ internal class ProjectTree(string rootDirectory)
 
     public bool IsModified => _projects.Any(p => p.IsModified);
 
-    public static ProjectTree Load(string dir)
+    public static ProjectTree Load(string dir, Predicate<string>? loadFile = null)
     {
+        loadFile ??= _ => true;
+
         var files = Directory
             .EnumerateFiles(dir, $"*{Consts.CsProjExtension}", SearchOption.AllDirectories)
             .Concat(Directory.EnumerateFiles(dir, Consts.BuildProps, SearchOption.AllDirectories))

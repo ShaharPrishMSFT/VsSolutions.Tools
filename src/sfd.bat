@@ -1,0 +1,1 @@
+%~dp0\VsSolutions.Tools.SolForge\bin\Debug\net8.0\VsSolutions.Tools.SolForge.exe %*

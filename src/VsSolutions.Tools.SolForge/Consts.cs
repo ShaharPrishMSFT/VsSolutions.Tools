@@ -9,6 +9,8 @@ internal class Consts
     public const string PackagesProps = "Directory.Packages.props";
 
     public const string CsProjExtension = ".csproj";
+    public const string SolForgeDir = ".config";
+    public const string SolForgeConfig = "solforge.json";
 
     public const string DirectoryPackagesPropsTemplate = """
 <Project>
