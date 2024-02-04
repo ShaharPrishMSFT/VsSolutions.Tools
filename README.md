@@ -64,7 +64,8 @@ dotnet solforge centralmgmt -a
 ```
 
 
-Options
+#### Options
+
 -a, --apply: Apply changes to the location where the solution is located (not passing -a will generate the files in a temporary location)
 
 -d, --directory <directory>: Specify the directory to work in.
