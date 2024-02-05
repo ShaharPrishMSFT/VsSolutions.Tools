@@ -10,7 +10,7 @@ SolForge is a command-line tool designed for optimizing Visual Studio solutions.
 
 SolForge is a .NET tool and can be installed via the .NET CLI.
 
-### Local (solutuion) installation
+### Local (solution) installation
 To install the tool locally as part of the solution you are in:
 ```shell
 dotnet tool install vssolutions.tools.solforge
