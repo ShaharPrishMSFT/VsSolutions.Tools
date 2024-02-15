@@ -7,10 +7,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackAsTool>true</PackAsTool>
-		<PackageId>VsSolutions.Tools.SolForge</PackageId>
+		<PackageId>solforge</PackageId>
 		<ToolCommandName>solforge</ToolCommandName>
-		<Version>1.0.1</Version>
-		<PackageVersion>1.0.1</PackageVersion>
+		<Version>1.0.2</Version>
+		<PackageVersion>1.0.2</PackageVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<!--
 		NU5100: Test platforms do not need to travel with the library
