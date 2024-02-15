@@ -9,8 +9,8 @@
 		<PackAsTool>true</PackAsTool>
 		<PackageId>solforge</PackageId>
 		<ToolCommandName>solforge</ToolCommandName>
-		<Version>1.0.2</Version>
-		<PackageVersion>1.0.2</PackageVersion>
+		<Version>1.0.3</Version>
+		<PackageVersion>1.0.3</PackageVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<!--
 		NU5100: Test platforms do not need to travel with the library
