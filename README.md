@@ -4,7 +4,35 @@
 
 ## Introduction
 
-SolForge is a command-line tool designed for optimizing Visual Studio solutions. It provides a comprehensive approach to improve solution structures, primarily focusing on enabling and managing central package management for NuGet packages.
+SolForge is a command-line tool designed for optimizing Visual Studio solutions. It currently only provides the ability to modify a project for Central Package Management.
+
+## Installation
+
+SolForge is a .NET tool and can be installed via the .NET CLI.
+
+### Local (solution) installation
+To install the tool locally as part of the solution you are in:
+```shell
+dotnet tool install vssolutions.tools.solforge
+```
+To use from the command line:
+
+```shell
+dotnet solforge -?
+```
+
+### Global installation
+To install the tool globaly, run this command:
+
+```shell
+dotnet tool install -g vssolutions.tools.solforge
+```
+To use from the command line:
+
+```shell
+solforge -?
+```
+
 
 ## Features
 
@@ -24,26 +52,22 @@ Central package management is particularly beneficial for:
 - Solutions where consistency in dependencies is crucial.
 - Environments where streamlined dependency management is desired.
 
-## Installation
-
-SolForge is a .NET tool and can be installed via the .NET CLI.
-
-```shell
-dotnet tool install [???]
-```
 
 ## Usage
 
 ### Central Management Command
 
-Modify the solution at the specified directory to use central package management by scanning all projects in the solution and generating a central package management file.
+Modify the solution at the current directory to use central package management by scanning all projects in the solution and generating a central package management file.
 
 ```
-dotnet [???] centralmgmt [options]
+dotnet solforge centralmgmt -a
 ```
 
 
-Options
+#### Options
+
 -a, --apply: Apply changes to the location where the solution is located (not passing -a will generate the files in a temporary location)
+
 -d, --directory <directory>: Specify the directory to work in.
+
 -?, -h, --help: Show help and usage information.
