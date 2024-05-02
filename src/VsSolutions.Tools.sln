@@ -5,16 +5,18 @@ VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VsSolutions.Tools.SolForge", "VsSolutions.Tools.SolForge\VsSolutions.Tools.SolForge.csproj", "{46624BCC-39C0-4DBC-9F3E-6F3C9F694473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib.31c7b13132a74e27bc0d1c5b70636c51", "TestLib.31c7b13132a74e27bc0d1c5b70636c51\TestLib.31c7b13132a74e27bc0d1c5b70636c51.csproj", "{D0B9BBB0-058C-4226-B571-D17B247DC245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLib.31c7b13132a74e27bc0d1c5b70636c51", "TestLib.31c7b13132a74e27bc0d1c5b70636c51\TestLib.31c7b13132a74e27bc0d1c5b70636c51.csproj", "{D0B9BBB0-058C-4226-B571-D17B247DC245}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{A8F6521E-4CC9-49CB-BD8C-E84ACF3A0397}"
 	ProjectSection(SolutionItems) = preProject
 		..\.github\workflows\build-vsSolutions.yml = ..\.github\workflows\build-vsSolutions.yml
+		.config\dotnet-tools.json = .config\dotnet-tools.json
 		..\.github\workflows\publish-vsSolutions.yml = ..\.github\workflows\publish-vsSolutions.yml
 		sfd.bat = sfd.bat
+		.config\solforge.json = .config\solforge.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib.41c7b13132a74e27bc0d1c5b70636c51", "TestLib.41c7b13132a74e27bc0d1c5b70636c51\TestLib.41c7b13132a74e27bc0d1c5b70636c51.csproj", "{3E0BCC22-2C36-4D8F-89ED-7F769ADFAF41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLib.41c7b13132a74e27bc0d1c5b70636c51", "TestLib.41c7b13132a74e27bc0d1c5b70636c51\TestLib.41c7b13132a74e27bc0d1c5b70636c51.csproj", "{3E0BCC22-2C36-4D8F-89ED-7F769ADFAF41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
